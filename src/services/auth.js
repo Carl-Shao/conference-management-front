@@ -1,13 +1,13 @@
 import api from './api'
 
 export function login(data) {
-  return api.post('/auth/login', data)
+  return api.post('/login', data)
 }
 
 export function logout() {
-  return api.post('/auth/logout')
+  return api.post('/logout')
 }
 
 export function checkAuth() {
-  return api.get('/auth/check')
+  return api.get('/check')
 }
