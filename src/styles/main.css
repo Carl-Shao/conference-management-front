@@ -62,12 +62,12 @@ body {
 }
 
 .btn-primary {
-  background-color: #409EFF;
+  background-color: #034688;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #66b1ff;
+  background-color: #034688;
 }
 
 .btn-danger {
@@ -111,7 +111,7 @@ body {
 
 .form-control:focus {
   outline: none;
-  border-color: #409EFF;
+  border-color: #034688;
   box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.2);
 }
 

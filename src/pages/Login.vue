@@ -204,13 +204,43 @@ const handleLogin = async () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #2677b1 0%, #143391 100%);
+  background: #1a1a1a;
+  position: relative;
+  overflow: hidden;
 }
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, transparent 95%, rgba(255,255,255,0.03) 100%),
+    linear-gradient(0deg, transparent 95%, rgba(255,255,255,0.03) 100%);
+  background-size: 50px 50px;
+}
+
+.login-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(103, 251, 244, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 195, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
 
 .login-box {
   width: 400px;
   padding: 40px;
-  background: #fff;
+  background: #ffffff8a;
   border-radius: 10px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
@@ -255,6 +285,8 @@ const handleLogin = async () => {
 
 .login-btn {
   width: 100%;
+  background-color: #010101;
+  border: none;
 }
 
 .login-tips {

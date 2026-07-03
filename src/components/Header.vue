@@ -105,8 +105,8 @@ const handleLogout = () => {
 }
 
 .nav-item.active {
-  color: #409EFF;
-  border-bottom-color: #409EFF;
+  color: #034688;
+  border-bottom-color: #034688;
   background-color: #ecf5ff;
 }
 
